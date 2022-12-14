@@ -1,5 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Rubik+80s+Fade&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html, body {
+  font-size: 20px;
+  height: 100vh;
+}
+
+body {
+  /* font-family: 'Monoton', cursive; */
+  font-family: 'Rubik 80s Fade', cursive;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock {
+  font-size: 10rem;
+  color: #fff;
 }
