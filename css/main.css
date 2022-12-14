@@ -18,6 +18,6 @@ body {
 }
 
 .clock {
-  font-size: 10rem;
+  font-size: clamp(9px, 4vw, 72px);
   color: #fff;
 }
