@@ -1,12 +1,12 @@
-function displayTime() {
-  let date = new Date();
-  let hours = date.getHours();
-  let minutes = (date.getMinutes() < 10 ? '0' : '') + date.getMinutes();
-  let seconds = (date.getSeconds() < 10 ? '0' : '') + date.getSeconds();
-  let time = `${hours}:${minutes}:${seconds}`;
+function displayPresentTime() {
+  let time = new Date();
+  let hours = time.getHours() > 12 ? time.getHours() - 12 : time.getHours();
+  let minutes = (time.getMinutes() < 10 ? '0' : '') + time.getMinutes();
+  let seconds = (time.getSeconds() < 10 ? '0' : '') + time.getSeconds();
+  let presentTime = `${hours}:${minutes}:${seconds}`;
 
   let clock = document.querySelector('.clock');
-  clock.textContent = time;
+  clock.textContent = presentTime;
 }
 
-setInterval(displayTime, 1000);
+setInterval(displayPresentTime, 1000);
